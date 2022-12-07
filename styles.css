@@ -1,0 +1,10 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(Norse-Bold.otf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+h1 {
+  font-family: norse-bold, sans-serif;
+}

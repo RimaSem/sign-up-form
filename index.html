@@ -8,5 +8,54 @@
     <script src="script.js" defer></script>
     <title>Sign-Up Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <div class="image-container">
+        <div class="logo-container">
+          <img src="img/odin-lined.png" alt="odin logo" />
+          <h1>ODIN</h1>
+        </div>
+        <div class="photo-credits-text">Photo by Halie West on Unsplash</div>
+      </div>
+
+      <div class="form-container">
+        <div class="form-card">
+          <h2>
+            This is not a real online service!You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <span class="italic">now</span> to get started.
+          </h2>
+          <h2>You <span class="italic">know</span> you want to.</h2>
+          <br />
+          <br />
+          <h2>Let's do this!</h2>
+          <form action="#" method="post">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="name" />
+
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="surname" />
+
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" />
+
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" id="confirm-password" name="confirmPass" />
+          </form>
+        </div>
+        <div class="button-card">
+          <button type="button">Create Account</button>
+          <div class="have-account-text">
+            Already have an account? <span class="log-in">Log in</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
