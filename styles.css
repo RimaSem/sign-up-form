@@ -105,10 +105,45 @@ form {
   margin-bottom: 3%;
 }
 
+.form-card input {
+  width: 175px;
+  height: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+}
+
+input:focus,
+input:focus:invalid {
+  outline: none;
+  border: 1px solid rgb(121, 121, 255);
+  box-shadow: 2px 2px 6px rgb(206, 206, 206);
+}
+
+input:invalid {
+  border: 1px solid rgb(222, 2, 2);
+  box-shadow: none;
+}
+
 form label {
   font-size: 0.57rem;
   letter-spacing: 0.01rem;
   margin-bottom: 0.2rem;
+  color: #474747;
+}
+
+.email-error,
+.psw-error {
+  font-size: 0.6rem;
+  color: rgb(222, 2, 2);
+  font-weight: 200;
+}
+
+.email-error {
+  display: none;
+}
+
+.psw-error {
+  display: none;
 }
 
 .button-card {
@@ -119,7 +154,7 @@ h3 {
   font-size: 1rem;
 }
 
-span {
+.text-card span {
   font-style: italic;
 }
 
