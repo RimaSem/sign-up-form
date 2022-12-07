@@ -26,40 +26,59 @@
       </div>
 
       <div class="form-container">
-        <div class="form-card">
+        <div class="text-card">
           <h3>
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams. Sign up
             <span class="italic">now</span> to get started.
           </h3>
           <h3>You <span class="italic">know</span> you want to.</h3>
-          <br />
-          <br />
+        </div>
+        <div class="form-card">
           <h3>Let's do this!</h3>
           <form action="#" method="post">
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="name" />
+            <div class="input-row">
+              <div class="input">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" name="name" />
+              </div>
+              <div class="input">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="surname" />
+              </div>
+            </div>
 
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="surname" />
+            <div class="input-row">
+              <div class="input">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="input">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+            </div>
 
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" />
-
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" id="phone" name="phone" />
-
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password" />
-
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm-password" name="confirmPass" />
+            <div class="input-row">
+              <div class="input">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" />
+              </div>
+              <div class="input">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirmPass"
+                />
+              </div>
+            </div>
           </form>
         </div>
         <div class="button-card">
           <button type="button">Create Account</button>
           <div class="have-account-text">
-            Already have an account? <span class="log-in">Log in</span>
+            Already have an account? <a href="#" class="log-in">Log in</a>
           </div>
         </div>
       </div>
