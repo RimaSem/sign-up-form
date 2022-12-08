@@ -10,8 +10,10 @@ const button = document.querySelector("button");
 email.addEventListener("focusout", (e) => {
   if (!email.validity.valid && email.value) {
     emailError.style.display = "block";
+    email.style.cssText = "border: 1px solid rgb(222, 2, 2); box-shadow: none;";
   } else {
     emailError.style.display = "none";
+    email.removeAttribute("style");
   }
 });
 
