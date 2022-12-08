@@ -21,22 +21,14 @@ email.addEventListener("input", (e) => {
   }
 });
 
-psw1.addEventListener("input", (e) => {
-  if (!psw1.value) {
-    pswError.style.display = "none";
-  }
-});
-
-psw2.addEventListener("input", (e) => {
-  if (!psw2.value) {
-    pswError.style.display = "none";
-  }
-});
-
 button.addEventListener("click", (e) => {
   if (psw1.value !== psw2.value) {
     pswError.style.display = "block";
+    psw1.style.cssText = "border: 1px solid rgb(222, 2, 2); box-shadow: none;";
+    psw2.style.cssText = "border: 1px solid rgb(222, 2, 2); box-shadow: none;";
   } else {
     pswError.style.display = "none";
+    psw1.removeAttribute("style");
+    psw2.removeAttribute("style");
   }
 });

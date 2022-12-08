@@ -10,12 +10,14 @@ body {
   padding: 0;
   background-color: black;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .main-container {
   background-color: white;
-  width: 65.3vw;
-  height: 100vh;
   margin: 0 auto;
   display: flex;
 }
@@ -23,16 +25,13 @@ body {
 .image-container {
   background-image: url(img/bg_photo.jpg);
   background-size: cover;
-  width: 37.15%;
   background-position: center;
+  width: 37.15%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
-}
-
-.form-container {
-  width: 62.85%;
+  background-color: white;
 }
 
 .logo-container {
@@ -74,16 +73,13 @@ h1 {
   font-family: norse-bold, sans-serif;
 }
 
-.form-container {
-}
-
 .text-card {
   padding: 18% 19% 4.5% 5%;
-  background-color: rgb(250, 248, 248);
 }
 
 .form-card {
-  padding: 0.1% 5% 3% 5%;
+  background-color: white;
+  padding: 0.1% 5% 2% 5%;
   font-weight: 700;
   box-shadow: 0 4px 6px -2px rgba(60, 60, 60, 0.299);
 }
@@ -105,23 +101,23 @@ form {
   margin-bottom: 3%;
 }
 
-.form-card input {
+.form-card input,
+input:valid {
   width: 175px;
   height: 20px;
   border: 1px solid #e5e7eb;
   border-radius: 3px;
 }
 
-input:focus,
-input:focus:invalid {
-  outline: none;
-  border: 1px solid rgb(121, 121, 255);
-  box-shadow: 2px 2px 6px rgb(206, 206, 206);
-}
-
 input:invalid {
   border: 1px solid rgb(222, 2, 2);
   box-shadow: none;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid rgb(121, 121, 255);
+  box-shadow: 2px 2px 6px rgb(206, 206, 206);
 }
 
 form label {
@@ -147,7 +143,7 @@ form label {
 }
 
 .button-card {
-  padding: 4% 19% 3% 5%;
+  margin-top: 30px;
 }
 
 h3 {
@@ -196,3 +192,9 @@ a.log-in {
 a.log-in:hover {
   text-decoration: underline;
 }
+
+/* .main-container > .form-container {
+  width: 62.85%;
+  background-color: white;
+  height: 100%;
+} */
