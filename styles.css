@@ -109,7 +109,7 @@ input:valid {
   border-radius: 3px;
 }
 
-input:invalid {
+input:invalid:focus {
   border: 1px solid rgb(222, 2, 2);
   box-shadow: none;
 }
@@ -192,9 +192,3 @@ a.log-in {
 a.log-in:hover {
   text-decoration: underline;
 }
-
-/* .main-container > .form-container {
-  width: 62.85%;
-  background-color: white;
-  height: 100%;
-} */

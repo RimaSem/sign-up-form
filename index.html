@@ -51,18 +51,25 @@
               </div>
               <div class="input">
                 <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="surname" />
+                <input
+                  type="text"
+                  id="last-name"
+                  name="surname"
+                  minlength="1"
+                  maxlength="50"
+                  required
+                />
               </div>
             </div>
 
             <div class="input-row">
               <div class="input">
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="email" required />
                 <span class="email-error">* Invalid email address</span>
               </div>
               <div class="input">
-                <label for="phone">PHONE NUMBER</label>
+                <label for="phone">PHONE NUMBER (optional)</label>
                 <input type="tel" id="phone" name="phone" maxlength="16" />
               </div>
             </div>
@@ -70,7 +77,7 @@
             <div class="input-row">
               <div class="input">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" />
+                <input type="password" id="password" name="password" required />
                 <span class="psw-error">* Passwords do not match</span>
               </div>
               <div class="input">
@@ -79,6 +86,7 @@
                   type="password"
                   id="confirm-password"
                   name="confirmPass"
+                  required
                 />
               </div>
             </div>

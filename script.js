@@ -26,7 +26,9 @@ button.addEventListener("click", (e) => {
     pswError.style.display = "block";
     psw1.style.cssText = "border: 1px solid rgb(222, 2, 2); box-shadow: none;";
     psw2.style.cssText = "border: 1px solid rgb(222, 2, 2); box-shadow: none;";
+    button.type = "button";
   } else {
+    button.type = "submit";
     pswError.style.display = "none";
     psw1.removeAttribute("style");
     psw2.removeAttribute("style");
